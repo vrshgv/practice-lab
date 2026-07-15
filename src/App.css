@@ -32,3 +32,40 @@ p.error {
   color: red;
   margin: 0;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.menu-btn {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .menu-btn {
+    display: block;
+    width: 100px;
+    background: yellow;
+  }
+
+  aside.open {
+    display: block;
+  }
+
+  aside.closed {
+    display: none;
+  }
+
+  table, thead, tbody, td {
+    display: block;
+  }
+
+  tr {
+    display: flex;
+  }
+}
